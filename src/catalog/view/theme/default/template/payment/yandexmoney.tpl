@@ -62,10 +62,6 @@
 		$('#button-confirm').bind('click', function(e) {
 			e.preventDefault();
 			e.stopPropagation();
-			$.ajax({
-				type: 'get',
-				url: 'index.php?route=payment/yandexmoney/confirm'
-			});
 			$("#YamoneyForm").submit();
 		});
 		$('input[name=paymentType]').bind('click', function() {
